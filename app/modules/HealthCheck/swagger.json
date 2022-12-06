@@ -1,0 +1,24 @@
+{
+    "paths": {
+        "/welcome": {
+            "get": {
+                "tags": [
+                    "HealthCheck"
+                ],
+                "description": "API ROUTING CHECk",
+                "parameters": [],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Everything working find...Happy coding..."
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        
+    }
+}

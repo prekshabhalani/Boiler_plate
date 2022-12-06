@@ -1,0 +1,8 @@
+.env.local
+.env.uat
+.env.qa
+.env
+.env.staging
+/node_modules
+/public
+/configs/configs.js

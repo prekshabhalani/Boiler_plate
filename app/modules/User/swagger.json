@@ -1,0 +1,55 @@
+{
+    "paths": {
+        "/users": {
+            "post": {
+                "tags": [
+                    "Users"
+                ],
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Detail of user",
+                        "schema": {
+                            "$ref": "#/definitions/userLogin"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "google login",
+                        "schema": {
+                            "$ref": "#/definitions/userLoginOut"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "userLogin": {
+            "properties": {
+                "firstName": {
+                    "type": "string",
+                    "example": "preksha"
+                },
+                "lastName": {
+                    "type": "string",
+                    "example": "patel"
+                },
+                "emailId": {
+                    "type": "string",
+                    "example": "preksha@gmail.com"
+                },
+                "photo": {
+                    "type": "string",
+                    "example": ""
+                }
+            }
+        }
+    }
+}
